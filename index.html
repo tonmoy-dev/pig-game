@@ -9,7 +9,8 @@
   </head>
   <body>
     <main>
-      <section class="game-info info--active">
+      <section class="game--info">
+        <button class="close--info">&times;</button>
         <div class="info-title">
           <h2>Hey! there.</h2>
           <h3>Welcome to PIG Game.</h3>
@@ -28,6 +29,7 @@
           'New Game' button will restart the game again.
         </p>
       </section>
+      <div class="info--overlay"></div>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
         <p class="score" id="score--0">43</p>
@@ -50,6 +52,7 @@
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>

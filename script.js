@@ -13,6 +13,9 @@ const diceEl = document.querySelector(".dice");
 const resetBtnEl = document.querySelector(".btn--new");
 const rollDiceBtnEl = document.querySelector(".btn--roll");
 const holdBtnEl = document.querySelector(".btn--hold");
+const infoCloseBtnEl = document.querySelector(".close--info");
+const infoOverlayEl = document.querySelector(".info--overlay");
+const gameInfoEl = document.querySelector(".game--info");
 
 let scores, currentScore, activePlayer, playing;
 
@@ -110,3 +113,14 @@ holdBtnEl.addEventListener("click", function () {
 
 // reset game -> remove or reset everything we've added or created.
 resetBtnEl.addEventListener("click", init);
+
+// close game info
+infoCloseBtnEl.addEventListener("click", function () {
+  gameInfoEl.classList.add("hidden");
+  infoOverlayEl.classList.add("hidden");
+});
+
+infoOverlayEl.addEventListener("click", function () {
+  gameInfoEl.classList.add("hidden");
+  infoOverlayEl.classList.add("hidden");
+});
